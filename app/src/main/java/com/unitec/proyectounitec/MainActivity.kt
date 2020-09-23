@@ -16,6 +16,6 @@ class MainActivity : AppCompatActivity() {
 //vamos a probar que funciona github
     override fun onCreate(nombre: Bundle?) {
         super.onCreate(nombre)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.ejemplito)
     }
 }
