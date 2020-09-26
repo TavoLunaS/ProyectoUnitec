@@ -17,5 +17,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(nombre: Bundle?) {
         super.onCreate(nombre)
         setContentView(R.layout.ejemplito)
+     //vamos a eliminar la barrita de la parte superior del celular. esta barrita se conoce
+     //como supportActionBar
+     //compilador del celular se llama Dalvik(en java es JVM)
+     //Las sentencias no terminan en ;
+     supportActionBar?.hide()
     }
 }
