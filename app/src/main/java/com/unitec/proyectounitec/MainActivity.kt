@@ -1,7 +1,11 @@
 package com.unitec.proyectounitec
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import kotlinx.android.synthetic.main.ejemplito.*
+
 //El punto de partida de toda app es la main activity(presenter)
 /*
 public class TarjetaCredito extends Tarjeta{
@@ -22,5 +26,16 @@ class MainActivity : AppCompatActivity() {
      //compilador del celular se llama Dalvik(en java es JVM)
      //Las sentencias no terminan en ;
      supportActionBar?.hide()
+     //Aqui vamos a introducir el primer codigo kotlin
+     botoncito.setOnClickListener {
+             //declaramos una variable de tipo intent
+         //int x;
+         //var x:Int
+         //var x=4
+         //var z=x*2
+         var i= Intent(this,ComandoVozActivity::class.java)
+             //la invocamos
+         startActivity(i)
+     }
     }
 }
